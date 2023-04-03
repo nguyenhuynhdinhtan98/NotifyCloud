@@ -6,7 +6,15 @@
 //
 
 import Foundation
+import CloudKit
 
 struct Note {
+    static let recordType = "Note"
     var title: String
+    
+    func noteRecord() -> CKRecord {
+        let record =  CKRecord(recordType: Note.recordType)
+        record.setValue(title, forKey: "title")
+        return record
+    }
 }
