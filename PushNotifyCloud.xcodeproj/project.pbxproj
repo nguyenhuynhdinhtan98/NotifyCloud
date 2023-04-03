@@ -16,6 +16,8 @@
 		C26FB0FD29DA7248008F2D94 /* PushNotifyCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0FC29DA7248008F2D94 /* PushNotifyCloudTests.swift */; };
 		C26FB10729DA7248008F2D94 /* PushNotifyCloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB10629DA7248008F2D94 /* PushNotifyCloudUITests.swift */; };
 		C26FB10929DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */; };
+		C26FB11929DABFCA008F2D94 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB11829DABFCA008F2D94 /* Note.swift */; };
+		C26FB11C29DAC3B8008F2D94 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB11B29DAC3B8008F2D94 /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C26FB10229DA7248008F2D94 /* PushNotifyCloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushNotifyCloudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26FB10629DA7248008F2D94 /* PushNotifyCloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifyCloudUITests.swift; sourceTree = "<group>"; };
 		C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifyCloudUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C26FB11829DABFCA008F2D94 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C26FB11B29DAC3B8008F2D94 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,11 @@
 		C26FB0E429DA7248008F2D94 /* PushNotifyCloud */ = {
 			isa = PBXGroup;
 			children = (
-				C26FB0E529DA7248008F2D94 /* AppDelegate.swift */,
+				C26FB11A29DAC3AC008F2D94 /* Service */,
+				C26FB11729DABCAA008F2D94 /* Controller */,
+				C26FB11629DABCA5008F2D94 /* View */,
+				C26FB11529DABC94008F2D94 /* Model */,
 				C26FB0E729DA7248008F2D94 /* SceneDelegate.swift */,
-				C26FB0E929DA7248008F2D94 /* ViewController.swift */,
-				C26FB0EB29DA7248008F2D94 /* Main.storyboard */,
 				C26FB0EE29DA7248008F2D94 /* Assets.xcassets */,
 				C26FB0F029DA7248008F2D94 /* LaunchScreen.storyboard */,
 				C26FB0F329DA7248008F2D94 /* Info.plist */,
@@ -125,6 +130,39 @@
 				C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */,
 			);
 			path = PushNotifyCloudUITests;
+			sourceTree = "<group>";
+		};
+		C26FB11529DABC94008F2D94 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C26FB11829DABFCA008F2D94 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C26FB11629DABCA5008F2D94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C26FB0EB29DA7248008F2D94 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C26FB11729DABCAA008F2D94 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C26FB0E929DA7248008F2D94 /* ViewController.swift */,
+				C26FB0E529DA7248008F2D94 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C26FB11A29DAC3AC008F2D94 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C26FB11B29DAC3B8008F2D94 /* AlertService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +299,8 @@
 				C26FB0EA29DA7248008F2D94 /* ViewController.swift in Sources */,
 				C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */,
 				C26FB0E829DA7248008F2D94 /* SceneDelegate.swift in Sources */,
+				C26FB11929DABFCA008F2D94 /* Note.swift in Sources */,
+				C26FB11C29DAC3B8008F2D94 /* AlertService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
