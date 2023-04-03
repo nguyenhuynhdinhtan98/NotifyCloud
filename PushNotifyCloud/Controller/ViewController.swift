@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     var notes =  [Note]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func onComposePressed() {
@@ -32,16 +31,16 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var tableViewCell = UITableViewCell()
+        let tableViewCell = UITableViewCell()
         tableViewCell.textLabel?.text = notes[indexPath.row].title
         return tableViewCell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        1
+        return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        notes.count
+       return notes.count
     }
 }
 

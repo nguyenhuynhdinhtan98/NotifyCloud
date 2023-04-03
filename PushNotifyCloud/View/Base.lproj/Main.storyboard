@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,11 +14,12 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PushNotifyCloud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mzb-Bt-s6u">
-                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" systemColor="systemBackgroundColor"/>
                                 <items>
                                     <navigationItem title="Title" leftItemsSupplementBackButton="YES" id="R9Q-hq-xgW">
                                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="frs-cG-N8w">
@@ -28,15 +30,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iZ7-lM-KyI">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8bC-Xf-vdC" id="FxE-7F-s4C"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Mzb-Bt-s6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="61E-cj-ZKT"/>
+                            <constraint firstItem="iZ7-lM-KyI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DKx-cX-Ddi"/>
                             <constraint firstItem="Mzb-Bt-s6u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E94-eP-nN3"/>
+                            <constraint firstItem="iZ7-lM-KyI" firstAttribute="top" secondItem="Mzb-Bt-s6u" secondAttribute="bottom" id="K36-wG-zji"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iZ7-lM-KyI" secondAttribute="trailing" id="Npg-7q-KdR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iZ7-lM-KyI" secondAttribute="bottom" id="W8B-Ma-nkC"/>
                             <constraint firstItem="Mzb-Bt-s6u" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g8Z-mm-HXK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="iZ7-lM-KyI" id="DOs-UK-8nk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
