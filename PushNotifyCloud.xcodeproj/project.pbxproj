@@ -18,6 +18,7 @@
 		C26FB10929DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */; };
 		C26FB11929DABFCA008F2D94 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB11829DABFCA008F2D94 /* Note.swift */; };
 		C26FB11C29DAC3B8008F2D94 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB11B29DAC3B8008F2D94 /* AlertService.swift */; };
+		C2C8E4E729DAF66400053056 /* CKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C8E4E629DAF66400053056 /* CKService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifyCloudUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C26FB11829DABFCA008F2D94 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		C26FB11B29DAC3B8008F2D94 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		C2C8E4E629DAF66400053056 /* CKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				C26FB11B29DAC3B8008F2D94 /* AlertService.swift */,
+				C2C8E4E629DAF66400053056 /* CKService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				C26FB0EA29DA7248008F2D94 /* ViewController.swift in Sources */,
 				C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */,
 				C26FB0E829DA7248008F2D94 /* SceneDelegate.swift in Sources */,
+				C2C8E4E729DAF66400053056 /* CKService.swift in Sources */,
 				C26FB11929DABFCA008F2D94 /* Note.swift in Sources */,
 				C26FB11C29DAC3B8008F2D94 /* AlertService.swift in Sources */,
 			);
@@ -408,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -462,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
