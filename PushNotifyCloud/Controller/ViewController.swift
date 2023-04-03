@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     
     @IBAction func onComposePressed() {
         AlertService.composeNote(in: self) { note in
+            CKService.shared.save(record: note.noteRecord())
             self.insert(note: note)
         }
     }
