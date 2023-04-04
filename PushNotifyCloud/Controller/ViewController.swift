@@ -14,6 +14,14 @@ class ViewController: UIViewController {
     var notes =  [Note]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        getNote()
+    }
+    
+    func getNote() {
+        NoteService.getNotes { notes in
+            self.notes =  notes
+            self.tableView.reloadData()
+        }
     }
     
     @IBAction func onComposePressed() {

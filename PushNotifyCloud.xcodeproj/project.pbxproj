@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2360B9329DBBD4B0016D02D /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2360B9229DBBD4B0016D02D /* NoteService.swift */; };
 		C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0E529DA7248008F2D94 /* AppDelegate.swift */; };
 		C26FB0E829DA7248008F2D94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0E729DA7248008F2D94 /* SceneDelegate.swift */; };
 		C26FB0EA29DA7248008F2D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0E929DA7248008F2D94 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		C2089E7329DAF18D00BF7956 /* PushNotifyCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotifyCloud.entitlements; sourceTree = "<group>"; };
+		C2360B9229DBBD4B0016D02D /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
 		C26FB0E229DA7248008F2D94 /* PushNotifyCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotifyCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26FB0E529DA7248008F2D94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C26FB0E729DA7248008F2D94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			children = (
 				C26FB11B29DAC3B8008F2D94 /* AlertService.swift */,
 				C2C8E4E629DAF66400053056 /* CKService.swift */,
+				C2360B9229DBBD4B0016D02D /* NoteService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2360B9329DBBD4B0016D02D /* NoteService.swift in Sources */,
 				C26FB0EA29DA7248008F2D94 /* ViewController.swift in Sources */,
 				C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */,
 				C26FB0E829DA7248008F2D94 /* SceneDelegate.swift in Sources */,
