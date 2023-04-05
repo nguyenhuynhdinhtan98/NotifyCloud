@@ -26,4 +26,6 @@ struct Note {
         record.setValue(title, forKey: "title")
         return record
     }
+    
+ 
 }

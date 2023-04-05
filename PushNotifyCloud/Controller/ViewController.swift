@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     var notes =  [Note]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        CKService.shared.subcribe()
         getNote()
     }
     
