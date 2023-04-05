@@ -7,6 +7,7 @@
 
 import Foundation
 import CloudKit
+import UserNotifications
 
 class CKService {
     private init() {}
@@ -16,6 +17,17 @@ class CKService {
     
     let subcription =  CKQuerySubscription(recordType: Note.recordType, predicate: NSPredicate(value: true), options: .firesOnRecordCreation)
 
+    let unCenter = UNUserNotificationCenter.current()
+    
+    func authorize() {
+        let options: UNAuthorizationOptions = [.alert,.badge,.sound,.carPlay]
+        unCenter.requestAuthorization(options: options) { (granted,error) in
+            guard granted else {
+                print("USER GRANTED")
+                return
+            }
+        }
+    }
     
     func save(record: CKRecord) {
         privateDataBase.save(record) { record, error in
@@ -43,7 +55,7 @@ class CKService {
         subcription.notificationInfo = notificationInfo
         
         privateDataBase.save(subcription) { (record, error) in
-//           print(error ?? "No CK")
+           print(error ?? "No CK")
             print(record ?? "unable subcription")
         }
     }
