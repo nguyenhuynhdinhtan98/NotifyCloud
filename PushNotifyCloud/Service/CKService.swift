@@ -15,8 +15,7 @@ class CKService {
     
     let privateDataBase = CKContainer.default().privateCloudDatabase
     
-    let subcription =  CKQuerySubscription(recordType: Note.recordType, predicate: NSPredicate(value: true), options: .firesOnRecordCreation)
-
+    
     let unCenter = UNUserNotificationCenter.current()
     
     func authorize() {
@@ -43,20 +42,40 @@ class CKService {
             DispatchQueue.main.async {
                 completion(record)
             }
-          
+            
         }
     }
     
     
     func subcribe() {
+        let subcription =  CKQuerySubscription(recordType: Note.recordType, predicate: NSPredicate(value: true), options: .firesOnRecordCreation)
         
         let notificationInfo = CKQuerySubscription.NotificationInfo()
         notificationInfo.shouldSendContentAvailable = true
         subcription.notificationInfo = notificationInfo
         
         privateDataBase.save(subcription) { (record, error) in
-           print(error ?? "No CK")
+            print(error ?? "No CK")
             print(record ?? "unable subcription")
+        }
+    }
+    
+    func fetchRecord(withRecordId: CKRecord.ID) {
+        privateDataBase.fetch(withRecordID: withRecordId) { record, error in
+            print(error ?? "no record fetch error")
+            guard let record = record else { return
+             NotificationCenter.default.post(name: NSNotification.Name("internalNotifycation.fetchedRecord"), object: record)
+            }
+        }
+    }
+     
+    func handlerPushnotify(with user: [AnyHashable:Any]) {
+        let notify = CKNotification(fromRemoteNotificationDictionary: user)
+        switch notify?.notificationType {
+        case .query:
+            guard let queryNotify = notify as? CKQueryNotification, let recordId =  queryNotify.recordID else { return }
+            fetchRecord(withRecordId: recordId)
+        default : return
         }
     }
 }
