@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20FE54F29EF8468006C7435 /* NotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20FE54E29EF8468006C7435 /* NotifyService.swift */; };
 		C2360B9329DBBD4B0016D02D /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2360B9229DBBD4B0016D02D /* NoteService.swift */; };
 		C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0E529DA7248008F2D94 /* AppDelegate.swift */; };
 		C26FB0E829DA7248008F2D94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0E729DA7248008F2D94 /* SceneDelegate.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		C2089E7329DAF18D00BF7956 /* PushNotifyCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotifyCloud.entitlements; sourceTree = "<group>"; };
+		C20FE54E29EF8468006C7435 /* NotifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyService.swift; sourceTree = "<group>"; };
 		C2360B9229DBBD4B0016D02D /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
 		C26FB0E229DA7248008F2D94 /* PushNotifyCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotifyCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26FB0E529DA7248008F2D94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		C26FB11A29DAC3AC008F2D94 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				C20FE54E29EF8468006C7435 /* NotifyService.swift */,
 				C26FB11B29DAC3B8008F2D94 /* AlertService.swift */,
 				C2C8E4E629DAF66400053056 /* CKService.swift */,
 				C2360B9229DBBD4B0016D02D /* NoteService.swift */,
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20FE54F29EF8468006C7435 /* NotifyService.swift in Sources */,
 				C2360B9329DBBD4B0016D02D /* NoteService.swift in Sources */,
 				C26FB0EA29DA7248008F2D94 /* ViewController.swift in Sources */,
 				C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */,
