@@ -19,7 +19,7 @@ class CKService {
     let unCenter = UNUserNotificationCenter.current()
     
     func authorize() {
-        let options: UNAuthorizationOptions = [.alert,.badge,.sound,.carPlay]
+        let options: UNAuthorizationOptions = [.alert,.sound,.carPlay]
         unCenter.requestAuthorization(options: options) { (granted,error) in
             guard granted else {
                 print("USER GRANTED")

@@ -23,6 +23,7 @@ class NotifyService: NSObject {
     
     
     func registerForPushNotifications() {
+        
         unCenter.delegate = self
         UNUserNotificationCenter.current()
             .requestAuthorization(
@@ -37,13 +38,12 @@ class NotifyService: NSObject {
             print("Notification settings: \(settings)")
         }
     }
-    
-  
 }
 
 extension NotifyService: UNUserNotificationCenterDelegate {
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        NotificationCenter.default.post(name: NSNotification.Name("internalNotification.handleAction"), object: nil)
+        let userInfo = response.notification.request.content.userInfo
+        NotificationCenter.default.post(name: NSNotification.Name("internalNotification.handleAction"), object: userInfo)
         completionHandler()
     }
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
