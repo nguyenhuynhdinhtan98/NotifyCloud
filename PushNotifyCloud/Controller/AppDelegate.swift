@@ -12,21 +12,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         application.registerForRemoteNotifications()
-        UNUserNotificationCenter.current()
-            .requestAuthorization(
-                options: [.alert, .sound, .badge]) { [weak self] granted, _ in
-                    print("Permission granted: \(granted)")
-                    guard granted else { return }
-                    self?.getNotificationSettings()
-                }
+        NotifyService.shared.registerForPushNotifications()
         return true
     }
     
-    func getNotificationSettings() {
-        UNUserNotificationCenter.current().getNotificationSettings { settings in
-            print("Notification settings: \(settings)")
-        }
-    }
+ 
     
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
@@ -47,5 +37,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         print("failed to register for remote notifications with with error: \(error)")
     }
     
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("handling notification")
+        if let notification = response.notification.request.content.userInfo as? [String:AnyObject] {
+            let message = parseRemoteNotification(notification: notification)
+            print(message as Any)
+        }
+        completionHandler()
+    }
+     
+    private func parseRemoteNotification(notification:[String:AnyObject]) -> String? {
+        if let aps = notification["aps"] as? [String:AnyObject] {
+            let alert = aps["alert"] as? String
+            return alert
+        }
+        return nil
+    }
 }
 
