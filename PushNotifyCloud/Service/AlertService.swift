@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 class AlertService {
-    private  init() {}
+    private init() {}
+    
     static func composeNote(in view: UIViewController,completion:@escaping (Note) -> Void) {
         let alert = UIAlertController(title: "New Note", message: "What's on your mind ?",preferredStyle: .alert)
         alert.addTextField { tf in
