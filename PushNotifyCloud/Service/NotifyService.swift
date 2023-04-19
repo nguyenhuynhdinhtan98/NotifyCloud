@@ -27,7 +27,7 @@ class NotifyService: NSObject {
         unCenter.delegate = self
         UNUserNotificationCenter.current()
             .requestAuthorization(
-                options: [.alert, .sound, .badge]) {  granted, _ in
+                options: [.alert, .sound]) {  granted, _ in
                     print("Permission granted: \(granted)")
                     self.getNotificationSettings()
                 }
