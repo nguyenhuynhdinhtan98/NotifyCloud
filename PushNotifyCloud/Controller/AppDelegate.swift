@@ -9,7 +9,7 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         DispatchQueue.main.async {
             application.registerForRemoteNotifications()
@@ -27,6 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(   _ application: UIApplication,  didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
         let token = tokenParts.joined()
+        NotificationCenter.default.post(name: NSNotification.Name("internalNotification.handleDeviceToken"), object: token)
+        let defaults = UserDefaults.standard
+        defaults.set(token, forKey: "token")
         print("Device Token: \(token)")
     }
     

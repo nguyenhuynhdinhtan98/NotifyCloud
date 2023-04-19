@@ -50,6 +50,20 @@
                                     <action selector="openWebsite" destination="BYZ-38-t0r" eventType="touchUpInside" id="VP4-nJ-JSf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doM-9p-OzV">
+                                <rect key="frame" x="130.5" y="391" width="114" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Copy Token"/>
+                                <connections>
+                                    <action selector="handleDeviceToken" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snw-OM-ytd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipU-ER-cLJ">
+                                <rect key="frame" x="20" y="446" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -59,20 +73,27 @@
                             <constraint firstItem="Mzb-Bt-s6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="61E-cj-ZKT"/>
                             <constraint firstItem="EEP-9L-vfc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6yP-hK-s4P"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kTr-qc-xv3" secondAttribute="trailing" constant="20" id="8Zg-xG-W5G"/>
+                            <constraint firstItem="doM-9p-OzV" firstAttribute="top" secondItem="EEP-9L-vfc" secondAttribute="bottom" constant="40" id="CjJ-JE-ASu"/>
                             <constraint firstItem="Mzb-Bt-s6u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E94-eP-nN3"/>
                             <constraint firstItem="kTr-qc-xv3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HJN-f5-Jpk"/>
+                            <constraint firstAttribute="trailing" secondItem="ipU-ER-cLJ" secondAttribute="trailing" constant="20" id="Oae-4I-5QO"/>
                             <constraint firstItem="pf1-ky-S0K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Oxv-CA-aqq"/>
                             <constraint firstItem="pf1-ky-S0K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qqn-GK-HmD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pf1-ky-S0K" secondAttribute="trailing" constant="20" id="Rb3-xN-Cnc"/>
                             <constraint firstItem="pf1-ky-S0K" firstAttribute="top" secondItem="kTr-qc-xv3" secondAttribute="bottom" constant="30" id="bIM-im-18v"/>
+                            <constraint firstItem="ipU-ER-cLJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cVw-zF-vU9"/>
                             <constraint firstItem="Mzb-Bt-s6u" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g8Z-mm-HXK"/>
+                            <constraint firstItem="ipU-ER-cLJ" firstAttribute="top" secondItem="doM-9p-OzV" secondAttribute="bottom" constant="20" id="jMu-zV-Llb"/>
                             <constraint firstItem="kTr-qc-xv3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="syX-FT-pwI"/>
+                            <constraint firstItem="ipU-ER-cLJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="t0M-Jc-Q34"/>
+                            <constraint firstItem="doM-9p-OzV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xk7-dy-Xvh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="contentLbl" destination="pf1-ky-S0K" id="vej-tF-hxm"/>
                         <outlet property="linkBTN" destination="EEP-9L-vfc" id="pkf-QD-UWa"/>
                         <outlet property="titleLbl" destination="kTr-qc-xv3" id="G4P-bg-6ne"/>
+                        <outlet property="tokenLbl" destination="ipU-ER-cLJ" id="nRX-Qa-HWO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

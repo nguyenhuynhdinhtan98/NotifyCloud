@@ -16,8 +16,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var contentLbl: UILabel!
     
+    @IBOutlet weak var tokenLbl: UILabel!
+    
     @IBOutlet weak var linkBTN: UIButton!
     
+
     var link:String?
     
     var notes =  [Note]()
@@ -69,6 +72,12 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func handleDeviceToken() {
+        let token = UserDefaults.standard.string(forKey: "token") ?? ""
+        print(token)
+        UIPasteboard.general.string = token
+        tokenLbl.text = token
+    }
 
     @IBAction func openWebsite() {
         if let urlDecode = link {
