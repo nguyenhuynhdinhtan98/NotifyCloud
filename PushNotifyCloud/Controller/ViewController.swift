@@ -52,7 +52,6 @@ class ViewController: UIViewController {
     
     @objc func handlerFetching(_ sender: Notification) {
         guard let record = sender.object as? CKRecord,   let note = Note(record: record) else { return }
-        
     }
     
     
