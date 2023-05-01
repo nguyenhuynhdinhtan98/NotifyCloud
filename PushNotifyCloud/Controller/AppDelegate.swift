@@ -16,8 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
-        configApplePush(application)
-        NotifyService.shared.registerForPushNotifications()
+        NotifyService.shared.registerForPushNotifications(application)
         return true
     }
 
@@ -48,22 +47,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print("failed to register for remote notifications with with error: \(error)")
     }
-    
-    func configApplePush(_ application: UIApplication) {
-           if #available(iOS 10.0, *) {
-               UNUserNotificationCenter.current().delegate = self
-               let authOptions: UNAuthorizationOptions = [.alert, .sound]
-               UNUserNotificationCenter.current().requestAuthorization(
-                   options: authOptions,
-                   completionHandler: {_, _ in })
-           } else {
-               let settings: UIUserNotificationSettings =
-               UIUserNotificationSettings(types: [.alert, .sound], categories: nil)
-               application.registerUserNotificationSettings(settings)
-           }
-           
-           application.registerForRemoteNotifications()
-       }
     
     func userNotificationCenter(
           _ center: UNUserNotificationCenter,
