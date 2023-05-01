@@ -9,8 +9,7 @@ import UIKit
 import CloudKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var tableView: UITableView!
+
     
     @IBOutlet weak var titleLbl: UILabel!
     
@@ -20,11 +19,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var linkBTN: UIButton!
     
-
     var link:String?
-    
-    var notes =  [Note]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(handleAction), name: NSNotification.Name("internalNotification.handleAction"), object: nil)
@@ -54,21 +50,6 @@ class ViewController: UIViewController {
             guard let url = URL(string: urlDecode) else { return }
             UIApplication.shared.open(url)
         }
-    }
-}
-
-extension ViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableViewCell = UITableViewCell()
-        tableViewCell.textLabel?.text = notes[indexPath.row].title
-        return tableViewCell
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes.count
     }
 }
 
