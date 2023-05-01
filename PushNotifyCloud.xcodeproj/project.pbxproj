@@ -20,7 +20,6 @@
 		C26FB10729DA7248008F2D94 /* PushNotifyCloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB10629DA7248008F2D94 /* PushNotifyCloudUITests.swift */; };
 		C26FB10929DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */; };
 		C26FB11929DABFCA008F2D94 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB11829DABFCA008F2D94 /* Note.swift */; };
-		C26FB11C29DAC3B8008F2D94 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB11B29DAC3B8008F2D94 /* AlertService.swift */; };
 		C27F62F429FF9CC0000AE1F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C27F62F329FF9CC0000AE1F1 /* GoogleService-Info.plist */; };
 		C7C89A4BFBC05783F7BDA982 /* Pods_PushNotifyCloudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68C19B8267FB00674886706 /* Pods_PushNotifyCloudTests.framework */; };
 /* End PBXBuildFile section */
@@ -65,7 +64,6 @@
 		C26FB10629DA7248008F2D94 /* PushNotifyCloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifyCloudUITests.swift; sourceTree = "<group>"; };
 		C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifyCloudUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C26FB11829DABFCA008F2D94 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		C26FB11B29DAC3B8008F2D94 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		C27F62F329FF9CC0000AE1F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D163462265B71EC1A08C1D75 /* Pods-PushNotifyCloudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifyCloudTests.release.xcconfig"; path = "Target Support Files/Pods-PushNotifyCloudTests/Pods-PushNotifyCloudTests.release.xcconfig"; sourceTree = "<group>"; };
 		E68C19B8267FB00674886706 /* Pods_PushNotifyCloudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushNotifyCloudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				C20FE54E29EF8468006C7435 /* NotifyService.swift */,
-				C26FB11B29DAC3B8008F2D94 /* AlertService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -458,7 +455,6 @@
 				C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */,
 				C26FB0E829DA7248008F2D94 /* SceneDelegate.swift in Sources */,
 				C26FB11929DABFCA008F2D94 /* Note.swift in Sources */,
-				C26FB11C29DAC3B8008F2D94 /* AlertService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
