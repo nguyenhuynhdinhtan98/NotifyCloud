@@ -23,7 +23,6 @@ class NotifyService: NSObject {
     
     
     func registerForPushNotifications() {
-        
         unCenter.delegate = self
         UNUserNotificationCenter.current()
             .requestAuthorization(

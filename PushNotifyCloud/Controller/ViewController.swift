@@ -61,15 +61,13 @@ class ViewController: UIViewController {
     
     @objc func handleAction(_ sender: Notification) {
         guard let notify = sender.object as? NSDictionary else { return }
-        if let aps = notify["aps"] as? NSDictionary {
-            let alert = aps["alert"] as? [String:Any]
-            let title = alert?["title"] as? String
-            let body = alert?["body"] as? String
-            let link = alert?["link"] as? String
-            titleLbl.text = title
-            contentLbl.text = body
-            self.link = link ?? ""
-        }
+        print(notify)
+        let title = notify["title"] as? String
+        let body = notify["body"] as? String
+        let link = notify["link"] as? String
+        self.titleLbl.text = title
+        self.contentLbl.text = body
+        self.link = link ?? ""
     }
     
     @IBAction func handleDeviceToken() {
