@@ -19,7 +19,6 @@
 		C26FB0FD29DA7248008F2D94 /* PushNotifyCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0FC29DA7248008F2D94 /* PushNotifyCloudTests.swift */; };
 		C26FB10729DA7248008F2D94 /* PushNotifyCloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB10629DA7248008F2D94 /* PushNotifyCloudUITests.swift */; };
 		C26FB10929DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */; };
-		C26FB11929DABFCA008F2D94 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB11829DABFCA008F2D94 /* Note.swift */; };
 		C27F62F429FF9CC0000AE1F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C27F62F329FF9CC0000AE1F1 /* GoogleService-Info.plist */; };
 		C7C89A4BFBC05783F7BDA982 /* Pods_PushNotifyCloudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68C19B8267FB00674886706 /* Pods_PushNotifyCloudTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,7 +62,6 @@
 		C26FB10229DA7248008F2D94 /* PushNotifyCloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushNotifyCloudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26FB10629DA7248008F2D94 /* PushNotifyCloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifyCloudUITests.swift; sourceTree = "<group>"; };
 		C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifyCloudUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C26FB11829DABFCA008F2D94 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		C27F62F329FF9CC0000AE1F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D163462265B71EC1A08C1D75 /* Pods-PushNotifyCloudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifyCloudTests.release.xcconfig"; path = "Target Support Files/Pods-PushNotifyCloudTests/Pods-PushNotifyCloudTests.release.xcconfig"; sourceTree = "<group>"; };
 		E68C19B8267FB00674886706 /* Pods_PushNotifyCloudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushNotifyCloudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +139,6 @@
 				C26FB11A29DAC3AC008F2D94 /* Service */,
 				C26FB11729DABCAA008F2D94 /* Controller */,
 				C26FB11629DABCA5008F2D94 /* View */,
-				C26FB11529DABC94008F2D94 /* Model */,
 				C26FB0E729DA7248008F2D94 /* SceneDelegate.swift */,
 				C26FB0EE29DA7248008F2D94 /* Assets.xcassets */,
 				C26FB0F029DA7248008F2D94 /* LaunchScreen.storyboard */,
@@ -165,14 +162,6 @@
 				C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */,
 			);
 			path = PushNotifyCloudUITests;
-			sourceTree = "<group>";
-		};
-		C26FB11529DABC94008F2D94 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C26FB11829DABFCA008F2D94 /* Note.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		C26FB11629DABCA5008F2D94 /* View */ = {
@@ -454,7 +443,6 @@
 				C26FB0EA29DA7248008F2D94 /* ViewController.swift in Sources */,
 				C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */,
 				C26FB0E829DA7248008F2D94 /* SceneDelegate.swift in Sources */,
-				C26FB11929DABFCA008F2D94 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
