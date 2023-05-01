@@ -10,7 +10,6 @@
 		06CA38C27E13F3D7EFEEA979 /* Pods_PushNotifyCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D22C31A0389AB3F1E99EF01 /* Pods_PushNotifyCloud.framework */; };
 		128B4237A52046211D9B0D8E /* Pods_PushNotifyCloud_PushNotifyCloudUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5D95A2EFF773E7358C05BE /* Pods_PushNotifyCloud_PushNotifyCloudUITests.framework */; };
 		C20FE54F29EF8468006C7435 /* NotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20FE54E29EF8468006C7435 /* NotifyService.swift */; };
-		C2360B9329DBBD4B0016D02D /* NoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2360B9229DBBD4B0016D02D /* NoteService.swift */; };
 		C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0E529DA7248008F2D94 /* AppDelegate.swift */; };
 		C26FB0E829DA7248008F2D94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0E729DA7248008F2D94 /* SceneDelegate.swift */; };
 		C26FB0EA29DA7248008F2D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0E929DA7248008F2D94 /* ViewController.swift */; };
@@ -23,7 +22,6 @@
 		C26FB11929DABFCA008F2D94 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB11829DABFCA008F2D94 /* Note.swift */; };
 		C26FB11C29DAC3B8008F2D94 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB11B29DAC3B8008F2D94 /* AlertService.swift */; };
 		C27F62F429FF9CC0000AE1F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C27F62F329FF9CC0000AE1F1 /* GoogleService-Info.plist */; };
-		C2C8E4E729DAF66400053056 /* CKService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C8E4E629DAF66400053056 /* CKService.swift */; };
 		C7C89A4BFBC05783F7BDA982 /* Pods_PushNotifyCloudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68C19B8267FB00674886706 /* Pods_PushNotifyCloudTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +51,6 @@
 		8B642046DC26DB1DBCC499E8 /* Pods-PushNotifyCloudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifyCloudTests.debug.xcconfig"; path = "Target Support Files/Pods-PushNotifyCloudTests/Pods-PushNotifyCloudTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2089E7329DAF18D00BF7956 /* PushNotifyCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotifyCloud.entitlements; sourceTree = "<group>"; };
 		C20FE54E29EF8468006C7435 /* NotifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyService.swift; sourceTree = "<group>"; };
-		C2360B9229DBBD4B0016D02D /* NoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteService.swift; sourceTree = "<group>"; };
 		C26FB0E229DA7248008F2D94 /* PushNotifyCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotifyCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26FB0E529DA7248008F2D94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C26FB0E729DA7248008F2D94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +67,6 @@
 		C26FB11829DABFCA008F2D94 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		C26FB11B29DAC3B8008F2D94 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		C27F62F329FF9CC0000AE1F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C2C8E4E629DAF66400053056 /* CKService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKService.swift; sourceTree = "<group>"; };
 		D163462265B71EC1A08C1D75 /* Pods-PushNotifyCloudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifyCloudTests.release.xcconfig"; path = "Target Support Files/Pods-PushNotifyCloudTests/Pods-PushNotifyCloudTests.release.xcconfig"; sourceTree = "<group>"; };
 		E68C19B8267FB00674886706 /* Pods_PushNotifyCloudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushNotifyCloudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9502A618CF49C0780BA737 /* Pods-PushNotifyCloud-PushNotifyCloudUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifyCloud-PushNotifyCloudUITests.release.xcconfig"; path = "Target Support Files/Pods-PushNotifyCloud-PushNotifyCloudUITests/Pods-PushNotifyCloud-PushNotifyCloudUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,8 +199,6 @@
 			children = (
 				C20FE54E29EF8468006C7435 /* NotifyService.swift */,
 				C26FB11B29DAC3B8008F2D94 /* AlertService.swift */,
-				C2C8E4E629DAF66400053056 /* CKService.swift */,
-				C2360B9229DBBD4B0016D02D /* NoteService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -460,11 +454,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C20FE54F29EF8468006C7435 /* NotifyService.swift in Sources */,
-				C2360B9329DBBD4B0016D02D /* NoteService.swift in Sources */,
 				C26FB0EA29DA7248008F2D94 /* ViewController.swift in Sources */,
 				C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */,
 				C26FB0E829DA7248008F2D94 /* SceneDelegate.swift in Sources */,
-				C2C8E4E729DAF66400053056 /* CKService.swift in Sources */,
 				C26FB11929DABFCA008F2D94 /* Note.swift in Sources */,
 				C26FB11C29DAC3B8008F2D94 /* AlertService.swift in Sources */,
 			);

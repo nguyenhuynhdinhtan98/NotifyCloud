@@ -27,37 +27,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        CKService.shared.subcribe()
-        NotificationCenter.default.addObserver(self, selector: #selector(handlerFetching), name: Notification.Name("internalNotifycation.fetchedRecord"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(handleAction), name: NSNotification.Name("internalNotification.handleAction"), object: nil)
-//        getNote()
     }
-    
-    func getNote() {
-        NoteService.getNotes { notes in
-            self.notes =  notes
-            self.tableView.reloadData()
-        }
-    }
-    
-    @IBAction func onComposePressed() {
-        AlertService.composeNote(in: self) { note in
-            CKService.shared.save(record: note.noteRecord())
-            self.insert(note: note)
-        }
-    }
-    
-    func insert(note: Note) {
-        notes.insert(note, at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
-    }
-    
-    @objc func handlerFetching(_ sender: Notification) {
-        guard let record = sender.object as? CKRecord,   let note = Note(record: record) else { return }
-    }
-    
-    
+
     
     @objc func handleAction(_ sender: Notification) {
         guard let notify = sender.object as? NSDictionary else { return }
