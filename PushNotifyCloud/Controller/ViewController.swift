@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var linkBTN: UIButton!
     
+    @IBOutlet weak var linkLBL: UILabel!
+    
     var link:String?
 
     override func viewDidLoad() {
@@ -35,6 +37,7 @@ class ViewController: UIViewController {
         let link = notify["link"] as? String
         self.titleLbl.text = title
         self.contentLbl.text = body
+        self.linkLBL.text = link
         self.link = link ?? ""
     }
     
