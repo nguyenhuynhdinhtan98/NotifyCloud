@@ -7,12 +7,9 @@
 
 import Foundation
 import UserNotifications
+import UIKit
 
 class NotifyService: NSObject {
-    
-    //9RBPF7QFGU
-    //8PXK453PV3
-    //aa85b089df6e3d882a1bc7c973aa1787d7b91b06e8ce4e60ffbbf537a769103c
     
     private override init() {}
     
@@ -22,15 +19,21 @@ class NotifyService: NSObject {
     let unCenter = UNUserNotificationCenter.current()
     
     
-    func registerForPushNotifications() {
-        
+    func registerForPushNotifications(_ application: UIApplication) {
         unCenter.delegate = self
-        UNUserNotificationCenter.current()
-            .requestAuthorization(
-                options: [.alert, .sound, .badge]) {  granted, _ in
-                    print("Permission granted: \(granted)")
-                    self.getNotificationSettings()
-                }
+        if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.current().delegate = self
+            let authOptions: UNAuthorizationOptions = [.alert, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: {_, _ in })
+        } else {
+            let settings: UIUserNotificationSettings =
+            UIUserNotificationSettings(types: [.alert, .sound], categories: nil)
+            application.registerUserNotificationSettings(settings)
+        }
+        self.getNotificationSettings()
+        application.registerForRemoteNotifications()
     }
     
     func getNotificationSettings() {
