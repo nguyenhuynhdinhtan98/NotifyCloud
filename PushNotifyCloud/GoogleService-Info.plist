@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>319750577349-q7nt31cdtpgo4np99elemqk6qkj3oeu9.apps.googleusercontent.com</string>
+	<string>462694164835-as6dmjt0hcks4lh23ukuneidqfs6d51f.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.319750577349-q7nt31cdtpgo4np99elemqk6qkj3oeu9</string>
+	<string>com.googleusercontent.apps.462694164835-as6dmjt0hcks4lh23ukuneidqfs6d51f</string>
 	<key>API_KEY</key>
-	<string>AIzaSyApFhPlw_iHnqbZSJ5Hk8gCjYDk-ZCaKnY</string>
+	<string>AIzaSyBEfv3630zUVwLHRHppVjeIU0M9c74iDBQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>319750577349</string>
+	<string>462694164835</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.demo.demopushnotify</string>
+	<string>com.tannguyen.DemoPushNotify</string>
 	<key>PROJECT_ID</key>
-	<string>demopushnotify-6b17d</string>
+	<string>pushnotificationcrawdata</string>
 	<key>STORAGE_BUCKET</key>
-	<string>demopushnotify-6b17d.appspot.com</string>
+	<string>pushnotificationcrawdata.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:319750577349:ios:5e97442666705819ee64ac</string>
+	<string>1:462694164835:ios:7eaba11fbf632aebb0cb56</string>
 </dict>
 </plist>
