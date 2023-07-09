@@ -43,7 +43,6 @@ class ViewController: UIViewController {
     
     @IBAction func handleDeviceToken() {
         let token = UserDefaults.standard.string(forKey: "token") ?? ""
-        print(token)
         UIPasteboard.general.string = token
         tokenLbl.text = token
     }
