@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		06CA38C27E13F3D7EFEEA979 /* Pods_PushNotifyCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D22C31A0389AB3F1E99EF01 /* Pods_PushNotifyCloud.framework */; };
 		128B4237A52046211D9B0D8E /* Pods_PushNotifyCloud_PushNotifyCloudUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5D95A2EFF773E7358C05BE /* Pods_PushNotifyCloud_PushNotifyCloudUITests.framework */; };
+		C205742E2A5ADB33006CFAC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C205742D2A5ADB33006CFAC1 /* GoogleService-Info.plist */; };
 		C20FE54F29EF8468006C7435 /* NotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20FE54E29EF8468006C7435 /* NotifyService.swift */; };
 		C26FB0E629DA7248008F2D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0E529DA7248008F2D94 /* AppDelegate.swift */; };
 		C26FB0E829DA7248008F2D94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0E729DA7248008F2D94 /* SceneDelegate.swift */; };
@@ -19,7 +20,6 @@
 		C26FB0FD29DA7248008F2D94 /* PushNotifyCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB0FC29DA7248008F2D94 /* PushNotifyCloudTests.swift */; };
 		C26FB10729DA7248008F2D94 /* PushNotifyCloudUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB10629DA7248008F2D94 /* PushNotifyCloudUITests.swift */; };
 		C26FB10929DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */; };
-		C27F62F429FF9CC0000AE1F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C27F62F329FF9CC0000AE1F1 /* GoogleService-Info.plist */; };
 		C7C89A4BFBC05783F7BDA982 /* Pods_PushNotifyCloudTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68C19B8267FB00674886706 /* Pods_PushNotifyCloudTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +47,7 @@
 		2D22C31A0389AB3F1E99EF01 /* Pods_PushNotifyCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushNotifyCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5D95A2EFF773E7358C05BE /* Pods_PushNotifyCloud_PushNotifyCloudUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushNotifyCloud_PushNotifyCloudUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B642046DC26DB1DBCC499E8 /* Pods-PushNotifyCloudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifyCloudTests.debug.xcconfig"; path = "Target Support Files/Pods-PushNotifyCloudTests/Pods-PushNotifyCloudTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C205742D2A5ADB33006CFAC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C2089E7329DAF18D00BF7956 /* PushNotifyCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotifyCloud.entitlements; sourceTree = "<group>"; };
 		C20FE54E29EF8468006C7435 /* NotifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyService.swift; sourceTree = "<group>"; };
 		C26FB0E229DA7248008F2D94 /* PushNotifyCloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotifyCloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +63,6 @@
 		C26FB10229DA7248008F2D94 /* PushNotifyCloudUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushNotifyCloudUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C26FB10629DA7248008F2D94 /* PushNotifyCloudUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifyCloudUITests.swift; sourceTree = "<group>"; };
 		C26FB10829DA7248008F2D94 /* PushNotifyCloudUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifyCloudUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C27F62F329FF9CC0000AE1F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D163462265B71EC1A08C1D75 /* Pods-PushNotifyCloudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifyCloudTests.release.xcconfig"; path = "Target Support Files/Pods-PushNotifyCloudTests/Pods-PushNotifyCloudTests.release.xcconfig"; sourceTree = "<group>"; };
 		E68C19B8267FB00674886706 /* Pods_PushNotifyCloudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushNotifyCloudTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9502A618CF49C0780BA737 /* Pods-PushNotifyCloud-PushNotifyCloudUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotifyCloud-PushNotifyCloudUITests.release.xcconfig"; path = "Target Support Files/Pods-PushNotifyCloud-PushNotifyCloudUITests/Pods-PushNotifyCloud-PushNotifyCloudUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 		C26FB0E429DA7248008F2D94 /* PushNotifyCloud */ = {
 			isa = PBXGroup;
 			children = (
-				C27F62F329FF9CC0000AE1F1 /* GoogleService-Info.plist */,
 				C2089E7329DAF18D00BF7956 /* PushNotifyCloud.entitlements */,
+				C205742D2A5ADB33006CFAC1 /* GoogleService-Info.plist */,
 				C26FB11A29DAC3AC008F2D94 /* Service */,
 				C26FB11729DABCAA008F2D94 /* Controller */,
 				C26FB11629DABCA5008F2D94 /* View */,
@@ -309,7 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C26FB0F229DA7248008F2D94 /* LaunchScreen.storyboard in Resources */,
-				C27F62F429FF9CC0000AE1F1 /* GoogleService-Info.plist in Resources */,
+				C205742E2A5ADB33006CFAC1 /* GoogleService-Info.plist in Resources */,
 				C26FB0EF29DA7248008F2D94 /* Assets.xcassets in Resources */,
 				C26FB0ED29DA7248008F2D94 /* Main.storyboard in Resources */,
 			);
@@ -636,7 +636,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tannguyen.DemoPushNnotify;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tannguyen.DemoPushNotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -669,7 +669,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tannguyen.DemoPushNnotify;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tannguyen.DemoPushNotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
