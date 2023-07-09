@@ -31,17 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         NotificationCenter.default.post(name: NSNotification.Name("internalNotification.handleDeviceToken"), object: token)
         let defaults = UserDefaults.standard
         Messaging.messaging().apnsToken = deviceToken
-//        Messaging.messaging().subscribe(toTopic: "ChatBot")
-        Messaging.messaging().token { token, error in
-            if let error = error {
-                print("Error fetching FCM registration token: \(error)")
-            } else if let token = token {
-                print("FCM registration token: \(token)")
-                Messaging.messaging().apnsToken = deviceToken
-//                Messaging.messaging().subscribe(toTopic: "ChatBot")
-                defaults.set((token), forKey: "token")
-            }
-        }
+        Messaging.messaging().subscribe(toTopic: "ChatBot")
+        Messaging.messaging().subscribe(toTopic: "CrawData")
+        defaults.set((token), forKey: "token")
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
