@@ -29,11 +29,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
         let token = tokenParts.joined()
         NotificationCenter.default.post(name: NSNotification.Name("internalNotification.handleDeviceToken"), object: token)
-        let defaults = UserDefaults.standard
+        let defaultChatBot = UserDefaults.standard
         Messaging.messaging().apnsToken = deviceToken
         Messaging.messaging().subscribe(toTopic: "ChatBot")
+        defaultChatBot.set((token), forKey: "token")
+        let defaultCrawData = UserDefaults.standard
+        Messaging.messaging().apnsToken = deviceToken
         Messaging.messaging().subscribe(toTopic: "CrawData")
-        defaults.set((token), forKey: "token")
+        defaultCrawData.set((token), forKey: "token")
+        
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
