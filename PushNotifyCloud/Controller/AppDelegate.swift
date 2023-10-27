@@ -31,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         NotificationCenter.default.post(name: NSNotification.Name("internalNotification.handleDeviceToken"), object: token)
         let defaults = UserDefaults.standard
         Messaging.messaging().apnsToken = deviceToken
+        Messaging.messaging().subscribe(toTopic: "ChatBot")
         Messaging.messaging().subscribe(toTopic: "CrawData")
         defaults.set((token), forKey: "token")
     }
